@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import ReservaContext from "../context/ReservaProvider"
+import ReservaContext from "@/context/ReservaProvider"
 
 
 const useReserva = () => {
