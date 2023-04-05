@@ -3,7 +3,7 @@ import useReserva from "@/hooks/useReserva"
 import Layout from "@/layout/Layout"
 
 
-const resumen = () => {
+const Resumen = () => {
 
 
     const { resumenReservas } = useReserva()
@@ -28,4 +28,4 @@ const resumen = () => {
 
 }
 
-export default resumen
+export default Resumen

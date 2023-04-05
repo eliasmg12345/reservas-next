@@ -1,9 +1,9 @@
-import Reservado from "@/components/Reservado";
+import Reservados from "@/components/Reservados";
 import useReserva from "@/hooks/useReserva"
 import Layout from "@/layout/Layout";
 
 
-const reservado = () => {
+const Reservado = () => {
 
     const { reservados } = useReserva()
     
@@ -11,7 +11,7 @@ const reservado = () => {
     return (
         <Layout pagina={`Reservado`}>
             {reservados.map((reservado) => (
-                <Reservado
+                <Reservados
                     key={reservado.idReserva}
                     reservado={reservado}
                 />
@@ -20,4 +20,4 @@ const reservado = () => {
     )
 }
 
-export default reservado
+export default Reservado
