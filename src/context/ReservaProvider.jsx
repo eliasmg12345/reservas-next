@@ -36,7 +36,7 @@ const ReservaProvider = ({ children }) => {
         if (!resumenReservas.length) {
             setResumenReservas([...RESERVAS])
         }
-    }, [])
+    }, [resumenReservas])
 
 
     const adicionarReserva = () => {
