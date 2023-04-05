@@ -1,6 +1,7 @@
 import { RESERVAS } from "@/constants"
 
-const { createContext, useState, useEffect } = require("react")
+//const { createContext, useState, useEffect } = require("react")
+import { createContext, useState, useEffect } from "react"
 const ReservaContext = createContext()
 
 const DATOS = {
