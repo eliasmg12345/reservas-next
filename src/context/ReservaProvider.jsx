@@ -32,7 +32,7 @@ const ReservaProvider = ({ children }) => {
 
     useEffect(() => {
 
-        if (resumenReservas.length === 0) {
+        if (!resumenReservas.length) {
             setResumenReservas([...RESERVAS])
         }
     }, [])
