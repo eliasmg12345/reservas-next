@@ -7,7 +7,7 @@ const HorarioLibre = () => {
         <div>
             {reservados.map(reserva => (
                 <article
-                    className='shadow shadow-gray-200'
+                    className='shadow shadow-gray-300'
                     key={reserva.idReserva}
                 >
                     <p className='text-blue-500'><span className='text-black'>Nombre:</span> {reserva.nombre}</p>

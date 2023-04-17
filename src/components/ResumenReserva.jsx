@@ -5,49 +5,54 @@ const ResumenReserva = ({ resumenReserva, numeroReserva }) => {
 
     const { id, nombre, fecha, cancha, inicial, final } = resumenReserva
     return (
-        <div className="shadow shadow-gray-500 flex justify-between p-5 mb-5 items-center">
-            <div>
+            <tr className="border-b border-gray-500">
+                <td className="p-3">{numeroReserva+1}</td>
+                <td className="p-3">
+                    <p className="text-gray-900">{nombre}</p>
+                </td>
 
-                <h1 className="font-bold">{`Reserva ${numeroReserva + 1}`}</h1>
-                <p>Nombre: {nombre}</p>
-                <p>Cancha: {cancha}</p>
-                <p>Fecha: {fecha}</p>
-                <p>Desde las: {inicial}</p>
-                <p>Hasta las: {final}</p>
-            </div>
-            <div>
-                <button
-                    type="button"
-                    className="bg-indigo-500 flex gap-2 px-5 py-2 text-white rounded uppercase shadow-md mt-3"
-                    onClick={() => {
-                        handlePublicarReserva(id)
-                    }}
-                >
-                    Publicar
-                </button>
+                <td className="p-3">
+                    <p className="text-gray-700">{cancha}</p>
+                </td>
 
+                <td className="p-3">
+                    <p className="text-gray-700">{fecha}</p>
+                </td>
 
+                <td className="p-3">
+                    <p className="text-gray-700">{inicial} - {final}</p>
+                </td>
 
-                <button
-                    type="button"
-                    className="bg-emerald-700 flex gap-2 px-5 py-2 text-white rounded uppercase shadow-md mt-3"
-                    onClick={() => {
-                        handleEditarResumenReserva(id)
-                    }}
-                >
-                    Editar
-                </button>
-
-                <button
-                    type="button"
-                    className="bg-rose-700 flex gap-2 px-5 py-2 text-white rounded uppercase shadow-md mt-3"
-                    onClick={() => { handleEliminarResumenReserva(id) }}
-                >
-                    Eliminar
-                </button>
-            </div>
-
-        </div>
+                <td className="p-3 gap-3">
+                    <button
+                        type="button"
+                        className="bg-indigo-500 px-1 py-1 text-white rounded uppercase shadow-md m-1"
+                        onClick={() => {
+                            handlePublicarReserva(id)
+                        }}
+                    >
+                        Publicar
+                    </button>
+                
+                    <button
+                        type="button"
+                        className="bg-emerald-700 px-1 py-1 text-white rounded uppercase shadow-md m-1"
+                        onClick={() => {
+                            handleEditarResumenReserva(id)
+                        }}
+                    >
+                        Editar
+                    </button>
+                
+                    <button
+                        type="button"
+                        className="bg-rose-700 px-1 py-1 text-white rounded uppercase shadow-md m-1"
+                        onClick={() => { handleEliminarResumenReserva(id) }}
+                    >
+                        Eliminar
+                    </button>
+                </td>
+            </tr>
     )
 }
 

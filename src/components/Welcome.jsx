@@ -10,11 +10,18 @@ const Welcome = () => {
 
     return (
         <div>
-            <h1 className="font-bold text-pink-800 uppercase align-baseline text-3xl text-center">Bienvenidos</h1>
+            <h1 className="font-bold text-pink-800 uppercase text-3xl text-center">Bienvenidos</h1>
             <div
-                className="flex gap-10"
+                className="flex justify-around gap-5"
             >
-                <p>Nuestras Canchas</p>
+                <div className="item-center">
+                    <p>Nuestras Canchas</p>
+                    <ul>
+                        <li>A</li>
+                        <li>B</li>
+                        <li>C</li>
+                    </ul>
+                </div>
 
                 <div>
                     <p>Horarios Reservados</p>

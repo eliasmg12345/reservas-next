@@ -30,7 +30,7 @@ const Layout = ({ children, pagina }) => {
                 <aside>
 
                 </aside>
-                <main className="md:w-8/12 xl:w-3/4 2xl:w-4/5 h-screen">
+                <main className="h-screen">
                     <div className="p-5">
                         <Pasos />
                         {children}
